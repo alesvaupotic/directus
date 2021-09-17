@@ -88,13 +88,6 @@ restarting `npm run dev`.
 
 :::
 
-If are looking to work on the Documentation (public website version), you can navigate to the `docs` directory and run
-the following command:
-
-```bash
-npm run dev:site
-```
-
 ::: tip
 
 If you encounter errors during this installation process, make sure your node version meets the
@@ -102,7 +95,24 @@ If you encounter errors during this installation process, make sure your node ve
 
 :::
 
-## 8. Make your fixes/changes
+## 8. Documentation updates
+
+If are looking to work on the Documentation (public website version), you can navigate to the `docs` directory. We use
+Vuepress and if it is not installed yet, use the command
+
+```bash
+npm i -g vuepress
+```
+
+Then run the following command:
+
+```bash
+npm run dev:site
+```
+
+Now your local copy of documentation should be available at [localhost:8080](http://localhost:8080)
+
+## 9. Make your fixes/changes
 
 At this point you are ready to start working on Directus! Before diving in however, it's worth reading through the
 introduction to [Contributing](/contributing/introduction).
