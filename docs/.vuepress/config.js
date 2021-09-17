@@ -80,6 +80,40 @@ module.exports = {
 						path: '/getting-started/installation',
 						title: 'Installation',
 					},
+
+					{
+						title: 'Database',
+						children: [
+							{
+								type: 'page',
+								path: '/concepts/databases',
+								title: 'Projects: Databases',
+							},
+							{
+								type: 'page',
+								path: '/concepts/collections',
+								title: 'Collections: Tables',
+							},
+
+							{
+								type: 'page',
+								path: '/concepts/fields',
+								title: 'Fields: Columns',
+							},
+
+							{
+								type: 'page',
+								path: '/concepts/types',
+								title: 'Types: Datatypes',
+							},
+							{
+								type: 'page',
+								path: '/concepts/items',
+								title: 'Items: Records',
+							},
+						],
+					},
+
 					{
 						type: 'page',
 						path: '/getting-started/support',
@@ -92,73 +126,32 @@ module.exports = {
 					},
 				],
 			},
+
 			{
-				title: 'Concepts',
+				title: 'App Guide',
 				children: [
-					{
-						type: 'page',
-						path: '/concepts/activity',
-						title: 'Activity',
-					},
 					{
 						type: 'page',
 						path: '/concepts/application',
 						title: 'Application',
 					},
+
 					{
 						type: 'page',
-						path: '/concepts/collections',
-						title: 'Collections',
+						path: '/concepts/users',
+						title: 'Users & Profile',
 					},
-					{
-						type: 'page',
-						path: '/concepts/databases',
-						title: 'Databases',
-					},
-					{
-						type: 'page',
-						path: '/concepts/displays',
-						title: 'Displays',
-					},
-					{
-						type: 'page',
-						path: '/concepts/extensions',
-						title: 'Extensions',
-					},
-					{
-						type: 'page',
-						path: '/concepts/fields',
-						title: 'Fields',
-					},
+
 					{
 						type: 'page',
 						path: '/concepts/files',
-						title: 'Files',
+						title: 'Files Library',
 					},
+
 					{
 						type: 'page',
-						path: '/concepts/interfaces',
-						title: 'Interfaces',
-					},
-					{
-						type: 'page',
-						path: '/concepts/items',
-						title: 'Items',
-					},
-					{
-						type: 'page',
-						path: '/concepts/layouts',
-						title: 'Layouts',
-					},
-					{
-						type: 'page',
-						path: '/concepts/modules',
-						title: 'Modules',
-					},
-					{
-						type: 'page',
-						path: '/concepts/permissions',
-						title: 'Permissions',
+						path: '/concepts/activity',
+						title: 'Activity',
 					},
 					{
 						type: 'page',
@@ -170,35 +163,10 @@ module.exports = {
 						path: '/concepts/relationships',
 						title: 'Relationships',
 					},
-					{
-						type: 'page',
-						path: '/concepts/revisions',
-						title: 'Revisions',
-					},
-					{
-						type: 'page',
-						path: '/concepts/roles',
-						title: 'Roles',
-					},
-					{
-						type: 'page',
-						path: '/concepts/translations',
-						title: 'Translations',
-					},
-					{
-						type: 'page',
-						path: '/concepts/types',
-						title: 'Types',
-					},
-					{
-						type: 'page',
-						path: '/concepts/users',
-						title: 'Users',
-					},
 				],
 			},
 			{
-				title: 'Guides',
+				title: 'Configuration',
 				children: [
 					{
 						type: 'page',
@@ -215,28 +183,31 @@ module.exports = {
 					},
 					{
 						type: 'page',
-						path: '/guides/api-endpoints',
-						title: 'API Endpoints',
+						path: '/reference/config-files',
+						title: 'Config Files',
 					},
 					{
 						type: 'page',
-						path: '/guides/api-hooks',
-						title: 'API Hooks',
+						path: '/reference/environment-variables',
+						title: 'Environment Variables',
 					},
+
 					{
 						type: 'page',
 						path: '/guides/collections',
 						title: 'Collections',
 					},
+
+					{
+						type: 'page',
+						path: '/reference/api/system/relations',
+						title: 'Relations',
+					},
+
 					{
 						type: 'page',
 						path: '/guides/displays',
 						title: 'Displays',
-					},
-					{
-						type: 'page',
-						path: '/guides/email-templates',
-						title: 'Email Templates',
 					},
 					{
 						type: 'page',
@@ -250,29 +221,37 @@ module.exports = {
 					},
 					{
 						type: 'page',
-						path: '/guides/interfaces',
-						title: 'Interfaces',
-					},
-					{
-						type: 'page',
 						path: '/guides/items',
 						title: 'Items',
-					},
-					{
-						type: 'page',
-						path: '/guides/layouts',
-						title: 'Layouts',
 					},
 					{
 						type: 'page',
 						path: '/guides/migrations',
 						title: 'Migrations',
 					},
+
 					{
 						type: 'page',
-						path: '/guides/modules',
-						title: 'Modules',
+						path: '/concepts/revisions',
+						title: 'Revisions',
 					},
+					{
+						type: 'page',
+						path: '/concepts/roles',
+						title: 'Roles',
+					},
+
+					{
+						type: 'page',
+						path: '/concepts/permissions',
+						title: 'Permissions',
+					},
+					{
+						type: 'page',
+						path: '/concepts/translations',
+						title: 'Translations',
+					},
+
 					{
 						type: 'page',
 						path: '/guides/permissions',
@@ -303,6 +282,123 @@ module.exports = {
 						path: '/guides/users',
 						title: 'Users',
 					},
+				],
+			},
+
+			{
+				title: 'Connecting to API',
+				children: [
+					{
+						type: 'page',
+						path: '/reference/api/introduction',
+						title: 'Introduction',
+					},
+					{
+						type: 'page',
+						path: '/reference/api/authentication',
+						title: 'Authentication',
+					},
+					{
+						type: 'page',
+						title: 'Query Parameters',
+						path: '/reference/api/query',
+					},
+					{
+						type: 'page',
+						title: 'Data Access',
+						path: '/reference/api/items',
+					},
+					{
+						type: 'page',
+						path: '/reference/api/assets',
+						title: 'Assets',
+					},
+					{
+						type: 'group',
+						title: 'System',
+						children: [
+							{
+								type: 'page',
+								path: '/reference/api/system/activity',
+								title: 'Activity',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/authentication',
+								title: 'Authentication',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/collections',
+								title: 'Collections',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/extensions',
+								title: 'Extensions',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/fields',
+								title: 'Fields',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/files',
+								title: 'Files',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/folders',
+								title: 'Folders',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/permissions',
+								title: 'Permissions',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/presets',
+								title: 'Presets',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/revisions',
+								title: 'Revisions',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/roles',
+								title: 'Roles',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/server',
+								title: 'Server',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/settings',
+								title: 'Settings',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/users',
+								title: 'Users',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/utilities',
+								title: 'Utilities',
+							},
+							{
+								type: 'page',
+								path: '/reference/api/system/webhooks',
+								title: 'Webhooks',
+							},
+						],
+					},
 					{
 						type: 'page',
 						path: '/guides/webhooks',
@@ -310,23 +406,74 @@ module.exports = {
 					},
 				],
 			},
+
 			{
-				title: 'Reference',
+				title: 'Extending Directus',
 				children: [
+					{
+						type: 'page',
+						path: '/guides/api-endpoints',
+						title: 'API Endpoints',
+					},
+
+					{
+						type: 'page',
+						path: '/concepts/displays',
+						title: 'Displays',
+					},
+					{
+						type: 'page',
+						path: '/concepts/extensions',
+						title: 'Extensions',
+					},
+					{
+						type: 'page',
+						path: '/concepts/interfaces',
+						title: 'Interfaces',
+					},
+					{
+						type: 'page',
+						path: '/concepts/layouts',
+						title: 'Layouts',
+					},
+					{
+						type: 'page',
+						path: '/concepts/modules',
+						title: 'Modules',
+					},
+
+					{
+						type: 'page',
+						path: '/guides/email-templates',
+						title: 'Email Templates',
+					},
+					{
+						type: 'page',
+						path: '/guides/api-hooks',
+						title: 'API Hooks',
+					},
+
+					{
+						type: 'page',
+						path: '/guides/interfaces',
+						title: 'Interfaces',
+					},
+
+					{
+						type: 'page',
+						path: '/guides/layouts',
+						title: 'Layouts',
+					},
+					{
+						type: 'page',
+						path: '/guides/modules',
+						title: 'Modules',
+					},
+
 					{
 						type: 'page',
 						path: '/reference/command-line-interface',
 						title: 'Command Line Interface',
-					},
-					{
-						type: 'page',
-						path: '/reference/environment-variables',
-						title: 'Environment Variables',
-					},
-					{
-						type: 'page',
-						path: '/reference/config-files',
-						title: 'Config Files',
 					},
 					{
 						type: 'page',
@@ -661,127 +808,6 @@ module.exports = {
 								path: 'reference/app/components/v-upload',
 								title: 'Upload',
 								type: 'page',
-							},
-						],
-					},
-				],
-			},
-			{
-				title: 'API Reference',
-				children: [
-					{
-						type: 'page',
-						path: '/reference/api/introduction',
-						title: 'Introduction',
-					},
-					{
-						type: 'page',
-						path: '/reference/api/authentication',
-						title: 'Authentication',
-					},
-					{
-						type: 'page',
-						title: 'Query Parameters',
-						path: '/reference/api/query',
-					},
-					{
-						type: 'page',
-						title: 'Data Access',
-						path: '/reference/api/items',
-					},
-					{
-						type: 'page',
-						path: '/reference/api/assets',
-						title: 'Assets',
-					},
-					{
-						type: 'group',
-						title: 'System',
-						children: [
-							{
-								type: 'page',
-								path: '/reference/api/system/activity',
-								title: 'Activity',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/authentication',
-								title: 'Authentication',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/collections',
-								title: 'Collections',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/extensions',
-								title: 'Extensions',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/fields',
-								title: 'Fields',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/files',
-								title: 'Files',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/folders',
-								title: 'Folders',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/permissions',
-								title: 'Permissions',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/presets',
-								title: 'Presets',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/relations',
-								title: 'Relations',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/revisions',
-								title: 'Revisions',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/roles',
-								title: 'Roles',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/server',
-								title: 'Server',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/settings',
-								title: 'Settings',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/users',
-								title: 'Users',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/utilities',
-								title: 'Utilities',
-							},
-							{
-								type: 'page',
-								path: '/reference/api/system/webhooks',
-								title: 'Webhooks',
 							},
 						],
 					},
