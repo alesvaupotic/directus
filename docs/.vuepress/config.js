@@ -82,6 +82,7 @@ module.exports = {
 					},
 
 					{
+						type: 'group',
 						title: 'Database',
 						children: [
 							{
@@ -196,6 +197,12 @@ module.exports = {
 						type: 'page',
 						path: '/guides/collections',
 						title: 'Collections',
+					},
+
+					{
+						type: 'page',
+						path: '/reference/filter-rules',
+						title: 'Filter Rules',
 					},
 
 					{
@@ -484,11 +491,6 @@ module.exports = {
 						type: 'page',
 						path: '/reference/field-transforms',
 						title: 'Field Transforms',
-					},
-					{
-						type: 'page',
-						path: '/reference/filter-rules',
-						title: 'Filter Rules',
 					},
 					{
 						type: 'page',
