@@ -1,4 +1,7 @@
-# Directus Docs
+<div class="two-col">
+  <h1>Directus Docs</h1>
+  <img src="../assets/illustrations/undraw_Welcome_re_h3d9.svg" height="150">
+</div>
 
 > These Docs will help you get up-and-running quickly, guide you through advanced features, and explain the core
 > concepts that make Directus so unique.
@@ -27,6 +30,19 @@ an entire organization's data (customers, inventory, business intelligence, proj
 lines_. The broadest goal of our platform is to present data in a simple, orderly, and intuitive way.
 
 :::
+
+## What's your role?
+
+We suggest you start by reading the basics in Getting Started and later continue withih your scope. You might relate to
+the following roles or use cases:
+
+| Role                | Use case                                                                         | Documentation Section                             |
+| ------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Final User          | Data entry, editing                                                              | [App Guide](/concepts/application/)               |
+| Administrator       | Setting up Directus within your organization                                     | [Configuration](/concepts/projects/)              |
+| Front End Developer | Developing Application which uses Directus data                                  | [Connecting to API](/reference/api/introduction/) |
+| Back End Developer  | Develop additional features for Directus, like new datatypes or e-mail templates | [Extending Directus](/guides/api-endpoints/)      |
+| Contributor         | Extend Directus Core, do translations, etc                                       | [Contributing](/contributing/introduction/)       |
 
 ## Database Mirroring
 

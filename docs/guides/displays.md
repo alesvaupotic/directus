@@ -111,7 +111,7 @@ the root of the `package.json` file:
 	"type": "display",
 	"path": "dist/index.js",
 	"source": "src/index.js",
-	"host": "^9.0.0-rc.87",
+	"host": "^9.0.0-rc.93",
 	"hidden": false
 }
 ```

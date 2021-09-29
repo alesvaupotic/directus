@@ -154,21 +154,16 @@ module.exports = {
 						path: '/concepts/activity',
 						title: 'Activity',
 					},
-					{
-						type: 'page',
-						path: '/concepts/projects',
-						title: 'Projects',
-					},
-					{
-						type: 'page',
-						path: '/concepts/relationships',
-						title: 'Relationships',
-					},
 				],
 			},
 			{
 				title: 'Configuration',
 				children: [
+					{
+						type: 'page',
+						path: '/configuration/introduction',
+						title: 'Introduction',
+					},
 					{
 						type: 'page',
 						path: '/guides/migrating-from-v8',
@@ -177,6 +172,12 @@ module.exports = {
 					{
 						type: 'divider',
 					},
+					{
+						type: 'page',
+						path: '/concepts/projects',
+						title: 'Projects',
+					},
+
 					{
 						type: 'page',
 						path: '/guides/api-config',
@@ -203,6 +204,11 @@ module.exports = {
 						type: 'page',
 						path: '/reference/filter-rules',
 						title: 'Filter Rules',
+					},
+					{
+						type: 'page',
+						path: '/concepts/relationships',
+						title: 'Relationships',
 					},
 
 					{
@@ -844,6 +850,12 @@ module.exports = {
 						title: 'Translating the App',
 					},
 				],
+			},
+
+			{
+				type: 'page',
+				path: '/getting-started/first',
+				title: 'Select docs',
 			},
 		],
 	},

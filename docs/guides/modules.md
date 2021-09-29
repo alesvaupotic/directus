@@ -143,7 +143,7 @@ the root of the `package.json` file:
 	"type": "module",
 	"path": "dist/index.js",
 	"source": "src/index.js",
-	"host": "^9.0.0-rc.92",
+	"host": "^9.0.0-rc.93",
 	"hidden": false
 }
 ```
